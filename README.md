@@ -3,16 +3,6 @@
 
 # 🍬 Rapaduras Artesanais — Protótipo Flutter
 
-Certo! Fiz o **ajuste das imagens na parte da página** (seção de Demonstração) e te entrego o **conteúdo final pronto para colar no seu README**.
-
-✔️ **Organizei a imagem como tela principal**
-✔️ **Corrigi a sessão de previews**
-✔️ **Mantive o estilo profissional**
-✔️ **Deixei tudo pronto para você apenas subir a imagem no GitHub e usar o link gerado**
-
----
-# 🍬 Rapaduras Artesanais — Protótipo Flutter
-
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat\&logo=flutter\&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat\&logo=dart\&logoColor=white)
 ![Status](https://img.shields.io/badge/status-protótipo-brightgreen)

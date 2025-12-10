@@ -88,18 +88,3 @@ lib/
 GitHub: [https://github.com/estudanteraianesilva637-](https://github.com/estudanteraianesilva637-)
 
 ---
-
-# ✔️ O que falta agora?
-
-Somente isso:
-
-1. **Faça upload da imagem** no seu repositório GitHub
-2. Clique nela → abra → “Open Raw”
-3. Copie o link
-4. Cole no lugar de:
-
-   ```
-   SEU_LINK_DA_IMAGEM_AQUI
-   ```
-
----

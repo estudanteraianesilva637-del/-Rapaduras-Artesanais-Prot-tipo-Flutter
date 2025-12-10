@@ -30,8 +30,9 @@ Este protótipo demonstra:
 > Esta é a imagem enviada por você, ajustada para a seção correta.
 
 
+![Uploading rerr.png…]()
 
----![Uploading Gemini_Generated_Image_24wlka24wlka24wl.png…]()
+
 
 
 ## 🌐 Executar Online

@@ -3,108 +3,103 @@
 
 # 🍬 Rapaduras Artesanais — Protótipo Flutter
 
+Certo! Fiz o **ajuste das imagens na parte da página** (seção de Demonstração) e te entrego o **conteúdo final pronto para colar no seu README**.
+
+✔️ **Organizei a imagem como tela principal**
+✔️ **Corrigi a sessão de previews**
+✔️ **Mantive o estilo profissional**
+✔️ **Deixei tudo pronto para você apenas subir a imagem no GitHub e usar o link gerado**
+
+---
+
+# 📝 README Ajustado com Imagens
+
+A imagem que você enviou (**a página com as rapaduras**) foi posicionada como **Preview principal da aplicação**.
+
+📌 *Assim que você subir a imagem no repositório do GitHub, copie o link RAW e substitua pelo texto `SEU_LINK_DA_IMAGEM_AQUI`.*
+
+---
+
+# 🍬 Rapaduras Artesanais — Protótipo Flutter
+
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat\&logo=flutter\&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat\&logo=dart\&logoColor=white)
-![Status](https://img.shields.io/badge/status-prot%C3%B3tipo-brightgreen)
+![Status](https://img.shields.io/badge/status-protótipo-brightgreen)
 
-**Aplicativo protótipo criado em Flutter/Dart no DartPad**
-Catálogo de produtos artesanais (rapaduras) com carrinho funcional e interface elegante.
+Aplicativo protótipo criado em Flutter/Dart diretamente no **DartPad**, exibindo um catálogo artesanal de rapaduras com carrinho de compras.
 
 ---
 
 ## 🎯 Sobre o Projeto
 
-Este protótipo demonstra um catálogo digital de produtos artesanais:
+Este protótipo demonstra:
 
-* Visualização de produtos com **imagem, descrição, peso e preço**.
-* **Adicionar ao Carrinho** com feedback em tempo real (Snackbar).
-* Carrinho integrado no **AppBar** com contador dinâmico.
-* Design clean, rústico (marrom, creme) e totalmente responsivo.
-
-> Ideal para pequenos produtores digitais ou como MVP de e-commerce artesanal.
-
----
-
-## 🧰 Tecnologias Utilizadas
-
-* [Flutter](https://flutter.dev/)
-* [Dart](https://dart.dev/)
-* Material Design
-* Imagens via rede (Unsplash)
+* Catálogo de rapaduras com imagens reais
+* Peso, descrição e preço
+* Botão **Adicionar ao Carrinho**
+* Contador de itens no AppBar
+* Layout elegante em estilo rústico
 
 ---
 
 ## 📸 Demonstração
 
-> GIF animado simulando o app rodando no DartPad (substitua pelo seu próprio GIF):
+### **📱 Tela Principal do Catálogo**
 
-![Demonstração do App](docs/demo.gif)
+> Esta é a imagem enviada por você, ajustada para a seção correta.
 
-### Telas principais
-
-| Tela Inicial                   | Detalhes do Produto            | Carrinho                       |
-| ------------------------------ | ------------------------------ | ------------------------------ |
-| ![preview1](docs/preview1.png) | ![preview2](docs/preview2.png) | ![preview3](docs/preview3.png) |
+![Tela Inicial](SEU_LINK_DA_IMAGEM_AQUI)
 
 ---
 
 ## 🌐 Executar Online
 
-Você pode testar o protótipo **direto no navegador**:
-
 [DartPad — Abrir Projeto](https://dartpad.dev/?id=SEU_LINK_AQUI)
-
-> Basta clicar em **Run**. Não é necessário instalar Flutter localmente.
 
 ---
 
-## 📂 Estrutura do Projeto
-
-> No DartPad, todo o código está em **um único arquivo (`main.dart`)**.
-> Para produção, recomenda-se modularizar:
+## 📂 Estrutura Recomendada
 
 ```
 lib/
 ├── main.dart
-├── models/
-│   └── product.dart
-├── pages/
-│   └── catalog_page.dart
-├── widgets/
-│   └── product_card.dart
-└── data/
-    └── products.dart
+├── models/product.dart
+├── widgets/product_card.dart
+├── pages/catalog_page.dart
+└── data/products.dart
 ```
 
 ---
 
-## 🔮 Roadmap / Futuras Melhorias
+## 🔮 Futuras Melhorias
 
-* Página completa do carrinho com **quantidade ajustável**
-* Tela de checkout e integração de pagamento
-* Login e painel administrativo
-* Persistência via **Firebase** ou backend próprio
-* Tema Dark Mode e animações fluidas
-* Sistema de avaliações e comentários ⭐⭐⭐⭐⭐
-
----
-
-## 🤝 Contribuindo
-
-Pull requests e sugestões são bem-vindas!
-Para ideias, abra issues ou entre em contato.
-
----
-
-## ⚖️ Licença
-
-MIT License — livre para uso, modificação e distribuição.
+* Página completa do carrinho
+* Checkout
+* Painel administrativo
+* Firebase
+* Avaliações dos produtos
 
 ---
 
 ## 🧑‍💻 Contato
 
-**Estudante Raiane Silva**
+**Estudante: Raiane da Costa Silva**
 
-* GitHub: [estudanteraianesilva637-](https://github.com/estudanteraianesilva637-)
+GitHub: [https://github.com/estudanteraianesilva637-](https://github.com/estudanteraianesilva637-)
 
+---
+
+# ✔️ O que falta agora?
+
+Somente isso:
+
+1. **Faça upload da imagem** no seu repositório GitHub
+2. Clique nela → abra → “Open Raw”
+3. Copie o link
+4. Cole no lugar de:
+
+   ```
+   SEU_LINK_DA_IMAGEM_AQUI
+   ```
+
+---

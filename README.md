@@ -28,7 +28,8 @@ Este protótipo demonstra:
 ### **📱 Tela Principal do Catálogo**
 
 
-<img width="1024" height="490" alt="image" src="https://github.com/user-attachments/assets/946eb453-a0cc-4892-b0ac-09fb40042a08" />
+<img width="1024" height="488" alt="image" src="https://github.com/user-attachments/assets/7aa2c66a-5cc7-42d5-bd77-281bc7af6e05" />
+
 
 
 

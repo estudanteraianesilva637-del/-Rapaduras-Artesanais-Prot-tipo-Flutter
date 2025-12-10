@@ -1,4 +1,4 @@
-# -Rapaduras-Artesanais-Prot-tipo-Flutter
+# Rapaduras-Artesanais-Prot-tipo-Flutter
 <img width="1088" height="960" alt="Gemini_Generated_Image_24wlka24wlka24wl" src="https://github.com/user-attachments/assets/5207b78d-3533-4507-a845-afecd8ef7a42" />
 Perfeito! Aqui está a versão final do README **somente com GitHub como contato**, totalmente profissional:
 

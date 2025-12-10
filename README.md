@@ -1,4 +1,6 @@
-# Rapaduras-Artesanais-Prot-tipo-Flutter
+<img width="288" height="259" alt="image-removebg-preview" src="https://github.com/user-attachments/assets/b1bfd19e-6fe4-4c2a-aa8e-02e6c167b45d" />
+
+Protótipo Rapaduras Artesanais
 <img width="1088" height="960" alt="Gemini_Generated_Image_24wlka24wlka24wl" src="https://github.com/user-attachments/assets/5207b78d-3533-4507-a845-afecd8ef7a42" />
 
 # 🍬 Rapaduras Artesanais — Protótipo Flutter

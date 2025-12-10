@@ -1,0 +1,278 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const RapaduraApp());
+}
+
+class RapaduraApp extends StatelessWidget {
+  const RapaduraApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Rapaduras Artesanais',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFF7F4EC), // Creme
+        primaryColor: const Color(0xFF8B5A2B), // Marrom
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF8B5A2B),
+          elevation: 2,
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+            fontSize: 22,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        // The `cardTheme` property of ThemeData expects a `CardThemeData` object,
+        // which defines the visual properties for Card widgets.
+        // Removed `const` from CardThemeData because its properties
+        // `Colors.brown.shade200` and `BorderRadius.circular(16)` are not constant expressions.
+        cardTheme: CardThemeData(
+          color: Colors.white,
+          elevation: 4,
+          shadowColor: Colors.brown.shade200,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+        ),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: const Color(0xFF8B5A2B),
+          secondary: const Color(0xFFD4B896),
+        ),
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(
+            color: Color(0xFF3A2A1A),
+            fontSize: 16,
+          ),
+        ),
+      ),
+      home: const CatalogPage(),
+    );
+  }
+}
+
+// ------------------------------------------------------
+// MODELO DE PRODUTO
+// ------------------------------------------------------
+class Product {
+  final String id;
+  final String name;
+  final double price;
+  final String weight;
+  final String image;
+  final String description;
+
+  Product({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.weight,
+    required this.image,
+    required this.description,
+  });
+}
+
+// ------------------------------------------------------
+// LISTA DE PRODUTOS
+// ------------------------------------------------------
+final List<Product> products = [
+  Product(
+    id: '1',
+    name: 'Rapadura Pura 500g',
+    price: 8.00,
+    weight: '500g',
+    image: 'https://images.unsplash.com/photo-1753121773108-970cffdfc2f9?w=800',
+    description: 'Feita artesanalmente com caldo de cana fresco. 100% natural.',
+  ),
+  Product(
+    id: '2',
+    name: 'Rapadura com Coco',
+    price: 10.00,
+    weight: '350g',
+    image:
+        'https://images.unsplash.com/photo-1665833613236-7c1d087463b1?w=800',
+    description:
+        'Mistura perfeita da rapadura tradicional com coco fresco ralado.',
+  ),
+  Product(
+    id: '3',
+    name: 'Rapadura com Amendoim',
+    price: 12.00,
+    weight: '300g',
+    image:
+        'https://images.unsplash.com/photo-1682528565154-8e44ebd757e1?w=800',
+    description:
+        'Com amendoim torrado. Textura crocante e sabor inesquecível.',
+  ),
+];
+
+// ------------------------------------------------------
+// CATÁLOGO DE PRODUTOS
+// ------------------------------------------------------
+class CatalogPage extends StatefulWidget {
+  const CatalogPage({super.key});
+
+  @override
+  State<CatalogPage> createState() => _CatalogPageState();
+}
+
+class _CatalogPageState extends State<CatalogPage> {
+  List<Product> cart = [];
+
+  void addToCart(Product product) {
+    setState(() {
+      cart.add(product);
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        backgroundColor: const Color(0xFF8B5A2B),
+        content: Text("${product.name} adicionada ao carrinho!"),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Rapaduras Artesanais"),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Stack(
+              children: [
+                const Icon(Icons.shopping_cart, color: Colors.white, size: 30),
+                if (cart.isNotEmpty)
+                  Positioned(
+                    right: 0,
+                    child: Container(
+                      padding: const EdgeInsets.all(4),
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                      ),
+                      child: Text(
+                        cart.length.toString(),
+                        style: const TextStyle(
+                          color: Color(0xFF8B5A2B),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ],
+      ),
+
+      // GRID DE PRODUTOS
+      body: ListView.builder(
+        padding: const EdgeInsets.all(16),
+        itemCount: products.length,
+        itemBuilder: (context, index) {
+          return ProductCard(
+            product: products[index],
+            onAdd: addToCart,
+          );
+        },
+      ),
+    );
+  }
+}
+
+// ------------------------------------------------------
+// CARD DE PRODUTO
+// ------------------------------------------------------
+class ProductCard extends StatelessWidget {
+  final Product product;
+  final Function(Product) onAdd;
+
+  const ProductCard({
+    super.key,
+    required this.product,
+    required this.onAdd,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Imagem
+          ClipRRect(
+            borderRadius:
+                const BorderRadius.vertical(top: Radius.circular(16)),
+            child: Image.network(
+              product.image,
+              height: 200,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+          ),
+
+          // Informações
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  product.name,
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: const Color(0xFF3A2A1A),
+                  ),
+                ),
+                Text(
+                  product.weight,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: const Color(0xFF5A4A3A),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  product.description,
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+                const SizedBox(height: 16),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "R\$ ${product.price.toStringAsFixed(2)}",
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        color: const Color(0xFF8B5A2B),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF8B5A2B),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 10),
+                      ),
+                      onPressed: () => onAdd(product),
+                      child: const Text(
+                        "Adicionar",
+                        style: TextStyle(color: Colors.white, fontSize: 15),
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}

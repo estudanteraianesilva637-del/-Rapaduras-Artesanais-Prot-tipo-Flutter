@@ -29,9 +29,10 @@ Este protótipo demonstra:
 
 > Esta é a imagem enviada por você, ajustada para a seção correta.
 
-![Tela Inicial](SEU_LINK_DA_IMAGEM_AQUI)
 
----
+
+---![Uploading Gemini_Generated_Image_24wlka24wlka24wl.png…]()
+
 
 ## 🌐 Executar Online
 

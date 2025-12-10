@@ -11,15 +11,6 @@ Certo! Fiz o **ajuste das imagens na parte da página** (seção de Demonstraç�
 ✔️ **Deixei tudo pronto para você apenas subir a imagem no GitHub e usar o link gerado**
 
 ---
-
-# 📝 README Ajustado com Imagens
-
-A imagem que você enviou (**a página com as rapaduras**) foi posicionada como **Preview principal da aplicação**.
-
-📌 *Assim que você subir a imagem no repositório do GitHub, copie o link RAW e substitua pelo texto `SEU_LINK_DA_IMAGEM_AQUI`.*
-
----
-
 # 🍬 Rapaduras Artesanais — Protótipo Flutter
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat\&logo=flutter\&logoColor=white)

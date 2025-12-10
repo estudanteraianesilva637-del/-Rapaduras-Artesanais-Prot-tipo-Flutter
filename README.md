@@ -27,11 +27,8 @@ Este protótipo demonstra:
 
 ### **📱 Tela Principal do Catálogo**
 
-> Esta é a imagem enviada por você, ajustada para a seção correta.
 
-
-![Uploading rerr.png…]()
-
+<img width="1024" height="490" alt="image" src="https://github.com/user-attachments/assets/946eb453-a0cc-4892-b0ac-09fb40042a08" />
 
 
 

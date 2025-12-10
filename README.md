@@ -60,6 +60,10 @@ lib/
 * Firebase
 * Avaliações dos produtos
 
+
+protótipo vai ficar assim
+<img width="1024" height="1536" alt="ChatGPT Image 10 de dez  de 2025, 10_01_06" src="https://github.com/user-attachments/assets/87a89022-61b6-452a-815a-5d96bb3bbce1" />
+
 ---
 
 ## 🧑‍💻 Contato
